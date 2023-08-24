@@ -62,3 +62,15 @@ articleElements.forEach((article) => {
   const paragraphElement = article.querySelector("p");
   paragraphElement.textContent = "New content for the paragraph.";
 });
+
+// H3
+
+// for alle articles overskrifter
+// Query all article elements
+const articleElementsh3 = document.querySelectorAll(".grid1-1 article");
+
+// Loop through each article and change the text content of the p element
+articleElementsh3.forEach((article) => {
+  const paragraphElement = article.querySelector("h3");
+  paragraphElement.textContent = "New h3.";
+});
