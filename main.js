@@ -6,10 +6,10 @@ console.log(footer);
 
 // pseudo selector
 // Query selector for the first article element
-const article1Element = document.querySelector(".grid1-1 article:first-child");
+const article1Element = document.querySelector(".grid-1-1 article:first-child");
 console.log(article1Element);
 // Query selector for the second article element
-const article2Element = document.querySelector(".grid1-1 article:last-child");
+const article2Element = document.querySelector(".grid-1-1 article:last-child");
 console.log(article2Element);
 
 // nærmeste søskende
@@ -32,7 +32,8 @@ headerElement.querySelector("h1").textContent = "New Title";
 
 // for 1 article
 // Query the first article element
-const firstArticle = document.querySelector(".grid1-1 article:first-child");
+const firstArticle = document.querySelector(".grid-1-1 article:first-child");
+console.log(firstArticle);
 // Query the first p element within the first article
 const firstArticleParagraph = firstArticle.querySelector("p");
 
@@ -41,7 +42,7 @@ firstArticleParagraph.textContent = "New content for the first paragraph.";
 
 // for alle articles
 // Query all article elements
-const articleElements = document.querySelectorAll(".grid1-1 article");
+const articleElements = document.querySelectorAll(".grid-1-1 article");
 
 // Loop through each article and change the text content of the p element
 articleElements.forEach((article) => {
@@ -51,7 +52,7 @@ articleElements.forEach((article) => {
 
 // for alle articles overskrifter
 // Query all article elements
-const articleElementsh3 = document.querySelectorAll(".grid1-1 article");
+const articleElementsh3 = document.querySelectorAll(".grid-1-1 article");
 
 // Loop through each article and change the text content of the p element
 articleElementsh3.forEach((article) => {
@@ -61,7 +62,7 @@ articleElementsh3.forEach((article) => {
 
 // ændre billederne i begge articles med javascript
 // Query all article elements
-const articleElementsimg = document.querySelectorAll(".grid1-1 article");
+const articleElementsimg = document.querySelectorAll(".grid-1-1 article");
 
 // Change the src attribute of the first image
 articleElementsimg[0].querySelector("img").src =
