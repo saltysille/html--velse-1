@@ -1,19 +1,10 @@
-// const info = document.querySelector("h3");
-// console.log(info);
+const image = document.querySelector("img");
+console.log(image);
 
-// const text = document.querySelector("p");
-// console.log(text);
+const footer = document.querySelector("footer");
+console.log(footer);
 
-// const pic = document.querySelector("img");
-// console.log(pic);
-
-// const footer = document.querySelector("footer");
-// console.log(footer);
-
-// const overskrift = document.querySelector("h1");
-// console.log(overskrift);
-
-// Pseudo selector
+// pseudo selector
 // Query selector for the first article element
 const article1Element = document.querySelector(".grid1-1 article:first-child");
 console.log(article1Element);
@@ -21,7 +12,7 @@ console.log(article1Element);
 const article2Element = document.querySelector(".grid1-1 article:last-child");
 console.log(article2Element);
 
-// Nærmeste søskende
+// nærmeste søskende
 // Query selector for the first article element
 const article3Element = document.querySelector(
   "main > .grid1-1 > article:first-child"
@@ -33,27 +24,22 @@ const article4Element = document.querySelector(
 );
 console.log(article4Element);
 
-// Udskift overskrift
-
 // Query the header element
 const headerElement = document.querySelector("header");
 
 // Change the text content of the h1 element
 headerElement.querySelector("h1").textContent = "New Title";
 
-// Udskift p for en article
-
+// for 1 article
 // Query the first article element
 const firstArticle = document.querySelector(".grid1-1 article:first-child");
-
 // Query the first p element within the first article
 const firstArticleParagraph = firstArticle.querySelector("p");
 
 // Change the text content of the first p element
 firstArticleParagraph.textContent = "New content for the first paragraph.";
 
-// Udskift p for begge articler
-
+// for alle articles
 // Query all article elements
 const articleElements = document.querySelectorAll(".grid1-1 article");
 
@@ -62,8 +48,6 @@ articleElements.forEach((article) => {
   const paragraphElement = article.querySelector("p");
   paragraphElement.textContent = "New content for the paragraph.";
 });
-
-// H3
 
 // for alle articles overskrifter
 // Query all article elements
@@ -74,3 +58,15 @@ articleElementsh3.forEach((article) => {
   const paragraphElement = article.querySelector("h3");
   paragraphElement.textContent = "New h3.";
 });
+
+// ændre billederne i begge articles med javascript
+// Query all article elements
+const articleElementsimg = document.querySelectorAll(".grid1-1 article");
+
+// Change the src attribute of the first image
+articleElementsimg[0].querySelector("img").src =
+  "https://picsum.photos/500/800";
+
+// Change the src attribute of the second image
+articleElementsimg[1].querySelector("img").src =
+  "https://picsum.photos/id/10/500/800";
