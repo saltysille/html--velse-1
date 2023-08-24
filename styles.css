@@ -1,0 +1,22 @@
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-left: 350px;
+}
+
+.center-section {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+footer {
+  text-align: center;
+}
